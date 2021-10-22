@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CAR GAME</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="start.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="pictureB"></div>
     <div class="gameContainer">
-        <div class="cloud"></div>
-        <div class="gameOver">Game Over</div>
-        <div class="car"></div>
-        <div id="scoreCont">Your Score: 0</div>
-        <div class="hurdle hurdleAni"></div>
-    </div>
+      <div class="cloud"></div>
 
-    
-</body>
+      <div class="gameOver">
+        <p>Game Over</p>
+        <button class="myButton" id="demo">Play Again</button>
+      </div>
+      <div class="car" id="carStop"></div>
+      <div id="scoreCont">Your Score: 0</div>
+      <div class="hurdle hurdleAni"></div>
+
+      <script>
+        document.getElementById("demo").addEventListener("click", myFunction);
+
+        function myFunction() {
+          window.location.reload();
+        }
+      </script>
+    </div>
+  </body>
 </html>
